@@ -8,16 +8,10 @@ import { NewAccountComponent } from './new-account/new-account.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MoviesDetailComponent } from './movies/movies-detail/movies-detail.component';
 import { FormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
 import { AddMoviesComponent } from './movies/add-movies/add-movies.component';
 import { EditMoviesComponent } from './movies/edit-movies/edit-movies.component';
 import { DeleteMoviesComponent } from './movies/delete-movies/delete-movies.component';
 
-const appRoutes: Routes = [
-  { path: 'addMovie', component: AddMoviesComponent },
-  { path: 'editMovie', component: EditMoviesComponent },
-  { path: 'deleteMovie', component: DeleteMoviesComponent },
-]
 
 @NgModule({
   declarations: [
@@ -35,11 +29,9 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    RouterModule.forRoot(appRoutes)
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  exports: [RouterModule]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
