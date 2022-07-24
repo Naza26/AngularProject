@@ -14,6 +14,7 @@ import { DeleteMoviesComponent } from './movies/delete-movies/delete-movies.comp
 import { AccountComponent } from './account/account.component';
 import { AccountService } from './account.service';
 import { LoggingService } from './logging.service';
+import { HttpClientModule } from '@angular/common/http'
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { LoggingService } from './logging.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [AccountService, LoggingService],
   bootstrap: [AppComponent]

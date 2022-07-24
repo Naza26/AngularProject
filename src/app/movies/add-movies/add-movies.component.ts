@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Movie } from '../movie.model';
 
 @Component({
   selector: 'app-add-movies',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddMoviesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+  }
+
+  onCreateMovie(movieData: {movieTitle: string, movieYear: string, movieDescription: string, seenMovie: boolean}) {
+    // Send Http Request
+    this.http.post('https://sample-project-bf329-default-rtdb.firebaseio.com/posts.json', movieData)
+    .subscribe(responseData => {
+      console.log(responseData);
+    });
   }
 
 }
