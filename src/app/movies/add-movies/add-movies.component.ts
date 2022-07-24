@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Movie } from '../movie.model';
 
 @Component({
   selector: 'app-add-movies',
