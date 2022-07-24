@@ -12,6 +12,8 @@ import { AddMoviesComponent } from './movies/add-movies/add-movies.component';
 import { EditMoviesComponent } from './movies/edit-movies/edit-movies.component';
 import { DeleteMoviesComponent } from './movies/delete-movies/delete-movies.component';
 import { AccountComponent } from './account/account.component';
+import { AccountService } from './account.service';
+import { LoggingService } from './logging.service';
 
 
 @NgModule({
@@ -33,7 +35,7 @@ import { AccountComponent } from './account/account.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AccountService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
