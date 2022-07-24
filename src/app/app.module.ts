@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { AddMoviesComponent } from './movies/add-movies/add-movies.component';
 import { EditMoviesComponent } from './movies/edit-movies/edit-movies.component';
 import { DeleteMoviesComponent } from './movies/delete-movies/delete-movies.component';
+import { AccountComponent } from './account/account.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { DeleteMoviesComponent } from './movies/delete-movies/delete-movies.comp
     AddMoviesComponent,
     EditMoviesComponent,
     DeleteMoviesComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,
