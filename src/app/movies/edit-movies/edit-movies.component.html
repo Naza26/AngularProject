@@ -9,9 +9,9 @@
             <p *ngIf="loadedData.length < 1">No movies available!</p>
             <ul class="list-group" *ngIf="loadedData.length >= 1">
                 <li class="list-group-item" *ngFor="let movie of loadedData">
-                    <h1>{{ movie.movieTitle }}</h1>
-                    <p>{{movie.movieYear}}</p>
-                    <p>{{movie.movieDescription}}</p>
+                    <h1>{{ movie.title }}</h1>
+                    <p>{{movie.releaseYear}}</p>
+                    <p>{{movie.description}}</p>
                     <p>was movie seen? {{movie.seenMovie}}</p>
                 </li>
             </ul>
