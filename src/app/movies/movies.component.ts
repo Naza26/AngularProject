@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Movie } from './movie.model';
+import { Movie } from '../models/movie.model';
+
 
 @Component({
   selector: 'app-movies',
@@ -9,7 +10,7 @@ import { Movie } from './movie.model';
 export class MoviesComponent implements OnInit {
 
   movies: Movie[] = [
-    new Movie('Star Wars', '1977', 'Sci-Fi', 'angular-project/src/app/images/star_wars_image.jpg')
+    new Movie('Star Wars', '1977', 'Sci-Fi', true, 'angular-project/src/app/images/star_wars_image.jpg')
   ];
 
   constructor() { }
