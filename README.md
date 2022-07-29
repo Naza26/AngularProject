@@ -25,3 +25,22 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Topics Covered
+
+1. Components and Data Binding
+2. Directives
+3. Services and Dependency Injection
+4. Routing
+5. Observables
+6. Forms
+7. Pipes
+8. Http Requests
+9. Authentication and Route Protection
+10. Modules and Optimization
+11. NgRx
+12. Animations
+13. Unit Testing
+14. CLI usage
+15. Typescript usage for Angular
+16. Firebase + APIs
