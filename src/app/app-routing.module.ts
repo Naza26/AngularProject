@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccountComponent } from './account/account.component';
+import { AuthComponent } from './auth/auth.component';
 import { AddMoviesComponent } from './movies/add-movies/add-movies.component';
 import { DeleteMoviesComponent } from './movies/delete-movies/delete-movies.component';
 import { EditMoviesComponent } from './movies/edit-movies/edit-movies.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'deleteMovie', component: DeleteMoviesComponent },
   { path: 'accounts', component: AccountComponent },
   { path: 'addAccount', component: NewAccountComponent },
+  { path: 'auth', component: AuthComponent },
 ];
 
 @NgModule({
