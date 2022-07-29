@@ -15,7 +15,8 @@ import { AccountComponent } from './account/account.component';
 import { AccountService } from './account.service';
 import { LoggingService } from './logging.service';
 import { HttpClientModule } from '@angular/common/http';
-import { AuthComponent } from './auth/auth.component'
+import { AuthComponent } from './auth/auth.component';
+import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { AuthComponent } from './auth/auth.component'
     DeleteMoviesComponent,
     AccountComponent,
     AuthComponent,
+    LoadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
