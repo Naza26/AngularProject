@@ -16,7 +16,7 @@ export class AddMoviesComponent implements OnInit {
 
   onCreateMovie(movieData: Movie) {
     // Send Http Request
-    this.http.post('https://sample-project-bf329-default-rtdb.firebaseio.com/movies.json', movieData)
+    this.http.post('https://angular-project-80012-default-rtdb.firebaseio.com/movies.json', movieData)
     .subscribe(responseData => {
       console.log(responseData);
     });

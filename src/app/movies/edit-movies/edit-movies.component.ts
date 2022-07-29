@@ -21,7 +21,7 @@ export class EditMoviesComponent implements OnInit {
 
   private onFetchMovies() {
     // Get Http Request
-    this.http.get('https://sample-project-bf329-default-rtdb.firebaseio.com/movies.json')
+    this.http.get('https://angular-project-80012-default-rtdb.firebaseio.com/movies.json')
     .pipe(map(responseData => {
       const postArray = [];
       for (const key in responseData) {
