@@ -14,7 +14,8 @@ import { DeleteMoviesComponent } from './movies/delete-movies/delete-movies.comp
 import { AccountComponent } from './account/account.component';
 import { AccountService } from './account.service';
 import { LoggingService } from './logging.service';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { AuthComponent } from './auth/auth.component'
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { HttpClientModule } from '@angular/common/http'
     EditMoviesComponent,
     DeleteMoviesComponent,
     AccountComponent,
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
